@@ -1,0 +1,29 @@
+
+uses-a
+
+public class Car {
+    private String color;
+    private int maxSpeed;
+
+    public void carInfo() {
+        System.out.println("Car Color: " + color + ", Max Speed: " + maxSpeed);
+    }
+}
+
+class Maserati extends Car {
+    public void MaseratiStartDemo() {
+        Engine maseratiEngine = new Engine();
+        maseratiEngine.start();
+        maseratiEngine.stop();
+    }
+}
+
+class Engine {
+    public void start() {
+        System.out.println("Engine started.");
+    }
+
+    public void stop() {
+        System.out.println("Engine stopped.");
+    }
+}
