@@ -1,0 +1,25 @@
+
+//is-a
+
+public class Car {
+    private string color;
+
+    public void carInfo() {
+        System.out.println("Car color is"+ color);
+    }
+}
+
+class jaquar extends Car {
+    public void jdemo() {
+        System.out.println("this is a jaquar car and the color is "+ color);
+    }
+}
+
+class IS_A {
+    public static void main(String args[])
+    {
+        Car c= new Car();
+        c.carInfo("red");
+        c.jdemo();
+    }     
+}
