@@ -1,0 +1,32 @@
+
+uses-a
+
+public class Car {
+    private String color;
+    private int maxSpeed;
+
+    public void carInfo() {
+        System.out.println("Car Color: " + color + ", Max Speed: " + maxSpeed);
+    }
+}
+
+class Engine {
+    public void start() {
+        System.out.println("Engine started.");
+    }
+
+    public void stop() {
+        System.out.println("Engine stopped.");
+    }
+}
+
+class HAS_A
+{
+    public static void main(String args[]){
+    Car c=new Car("red","200");
+    Engine e=new Engine();
+    Engine s1=c.start();
+    Engine s2=c.stop();
+    }   
+}
+    
